@@ -15,3 +15,14 @@
     background-color: #b3d68c; /* Light green */
     color: #333333; /* Dark text */
 }
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: #333333;
+}
+
+.social-icons a:hover {
+    color: #f17d62; /* Coral color for hover effect */
+}
