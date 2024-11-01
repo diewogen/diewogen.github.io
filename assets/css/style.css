@@ -23,6 +23,27 @@
     color: #333333;
 }
 
+.footer-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-section h3 {
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section p, .footer-section li {
+    font-size: 0.9em;
+    color: #333333;
+}
+
+
 .social-icons a:hover {
     color: #f17d62; /* Coral color for hover effect */
 }
