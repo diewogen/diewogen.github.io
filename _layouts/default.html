@@ -1,9 +1,67 @@
-<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | escape }} - {{ site.title | escape }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <!-- Font Awesome for Social Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  {{ content_for_header }}
+</head>
+<body>
+  
+  <!-- Header -->
+  <header class="site-header">
+    <div class="wrapper">
+      <a href="{{ site.baseurl }}/" class="site-title">{{ site.title }}</a>
+      <p class="site-description">{{ site.description }}</p>
+      <!-- Social Media Icons -->
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </header>
 
-<div class="social-icons">
-    <a href="#"><i class="fab fa-youtube"></i></a>
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-</div>
+  <!-- Main Content -->
+  <main class="page-content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-section">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Kontakt</h3>
+        <p>Die WoGen<br>Wohnprojekte-Genossenschaft e. Gen.</p>
+        <p>Rabnitzweg 18, 8063 Eggersdorf</p>
+        <p>office@diewogen.at</p>
+      </div>
+      <!-- News Section -->
+      <div class="news-section">
+        <h3>News</h3>
+        <ul>
+          <li>Test</li>
+        </ul>
+      </div>
+      <!-- Upcoming Events -->
+      <div class="events-section">
+        <h3>Nächste Veranstaltungen</h3>
+        <p>Event Details Here</p>
+      </div>
+    </div>
+
+    <!-- Footer Links -->
+    <div class="footer-links">
+      <p><a href="{{ site.baseurl }}/impressum">Impressum</a> | <a href="{{ site.baseurl }}/downloads">Downloads</a> | <a href="{{ site.baseurl }}/datenschutz">Datenschutzerklärung</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
