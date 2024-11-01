@@ -13,9 +13,14 @@
   
   <!-- Header -->
   <header class="site-header">
-    <div class="wrapper">
-      <a href="{{ site.baseurl }}/" class="site-title">{{ site.title }}</a>
-      <p class="site-description">{{ site.description }}</p>
+  <div class="wrapper">
+    <!-- Logo -->
+    <a href="{{ site.baseurl }}/">
+      <img src="{{ '/assets/images/logo1.png' | relative_url }}" alt="{{ site.title }}" class="site-logo">
+    </a>
+    <!-- Site Title and Description (optional) -->
+    <a href="{{ site.baseurl }}/" class="site-title">{{ site.title }}</a>
+    <p class="site-description">{{ site.description }}</p>
       <!-- Social Media Icons -->
       <div class="social-icons">
         <a href="#"><i class="fab fa-youtube"></i></a>
@@ -35,8 +40,15 @@
 
   <!-- Footer -->
   <footer class="site-footer">
+    <!-- Footer Links -->
+    <div class="footer-links">
+      <p><a href="{{ site.baseurl }}/impressum">Impressum</a> | <a href="{{ site.baseurl }}/downloads">Downloads</a> | <a href="{{ site.baseurl }}/datenschutz">Datenschutzerklärung</a></p>
+    </div>
     <div class="footer-section">
       <!-- Contact Info -->
+      <a href="{{ site.baseurl }}/">
+      <img src="{{ '/assets/images/logo1.png' | relative_url }}" alt="{{ site.title }}" class="site-logo">
+      </a>
       <div class="contact-info">
         <h3>Kontakt</h3>
         <p>Die WoGen<br>Wohnprojekte-Genossenschaft e. Gen.</p>
@@ -55,11 +67,6 @@
         <h3>Nächste Veranstaltungen</h3>
         <p>Event Details Here</p>
       </div>
-    </div>
-
-    <!-- Footer Links -->
-    <div class="footer-links">
-      <p><a href="{{ site.baseurl }}/impressum">Impressum</a> | <a href="{{ site.baseurl }}/downloads">Downloads</a> | <a href="{{ site.baseurl }}/datenschutz">Datenschutzerklärung</a></p>
     </div>
   </footer>
 
