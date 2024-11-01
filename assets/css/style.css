@@ -1,0 +1,17 @@
+/* Top navigation bar */
+.site-header {
+    background-color: #e8dfce; /* Light beige */
+}
+
+/* Main content area */
+.post-content, .page-content {
+    background-color: #f17d62; /* Coral */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #b3d68c; /* Light green */
+    color: #333333; /* Dark text */
+}
