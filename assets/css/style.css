@@ -1,5 +1,27 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.page-content {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.site-footer {
+    margin-top: 0;
+    padding-top: 20px; /* Adjust padding as desired */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-content {
+    flex-grow: 1;
 }
 
 /* Top navigation bar */
