@@ -1,1 +1,1 @@
-# diewogen.github.io
+# diewogen
