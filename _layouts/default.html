@@ -10,28 +10,29 @@
   {{ content_for_header }}
 </head>
 <body>
+<div class="wrapper">
   
 <!-- Header -->
 <header class="site-header">
-<div class="wrapper">
-  <!-- Logo -->
-  <a href="{{ site.baseurl }}/">
-    <img src="{{ '/assets/images/logo2.png' | relative_url }}" alt="{{ site.title }}" class="site-logo">
-  </a>
-  <!-- Site Title and Description (optional) -->
-  <!-- Social Media Icons -->
-    <div class="social-icons">
-      <a href="https://www.youtube.com/channel/UCa6n9bn3vowpSAgMwrQ5SNA/featured?view_as=subscriber"><i class="fab fa-youtube"></i></a>
-      <a href="https://www.facebook.com/diewogen/"><i class="fab fa-facebook"></i></a>
-      <a href="https://twitter.com/diewogen"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.instagram.com/diewogen/"><i class="fab fa-instagram"></i></a>
+  <div class="header-inner">
+    <!-- Logo -->
+    <a href="{{ site.baseurl }}/">
+      <img src="{{ '/assets/images/logo2.png' | relative_url }}" alt="{{ site.title }}" class="site-logo">
+    </a>
+    <!-- Site Title and Description (optional) -->
+    <!-- Social Media Icons -->
+      <div class="social-icons">
+        <a href="https://www.youtube.com/channel/UCa6n9bn3vowpSAgMwrQ5SNA/featured?view_as=subscriber"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.facebook.com/diewogen/"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/diewogen"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/diewogen/"><i class="fab fa-instagram"></i></a>
     </div>
   </div>
 </header>
 
 <!-- Main Content -->
 <main class="page-content">
-  <div class="wrapper">
+  <div class="content-inner">
    <!-- Footer Links -->
     <div class="footer-links">
     <p>
@@ -39,25 +40,25 @@
       <a href="{{ site.baseurl }}/downloads">Downloads</a> | 
       <a href="{{ site.baseurl }}/datenschutz">Datenschutzerklärung</a>
     </p>
-  </div>
+    </div>
   </div>
 </main>
 
-<!-- Footer -->
-<footer class="site-footer">
-  <div class="footer-section">
-    <!-- Contact Info -->
-    <a href="{{ site.baseurl }}/">
-    <img src="{{ '/assets/images/logo1.png' | relative_url }}" alt="{{ site.title }}" class="site-logo">
-    </a>
-    <div class="contact-info">
-      <h3>Kontakt</h3>
-      <p>Die WoGen<br>Wohnprojekte-Genossenschaft e. Gen.</p>
-      <p>Rabnitzweg 18, 8063 Eggersdorf</p>
-      <p>office@diewogen.at</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-section">
+      <!-- Contact Info -->
+      <a href="{{ site.baseurl }}/">
+      <img src="{{ '/assets/images/logo1.png' | relative_url }}" alt="{{ site.title }}" class="site-logo">
+      </a>
+      <div class="contact-info">
+        <h3>Kontakt</h3>
+        <p>Die WoGen<br>Wohnprojekte-Genossenschaft e. Gen.</p>
+        <p>Rabnitzweg 18, 8063 Eggersdorf</p>
+        <p>office@diewogen.at</p>
+      </div>
     </div>
-  </div>
-</footer>
-
+  </footer>
+</div>
 </body>
 </html>
