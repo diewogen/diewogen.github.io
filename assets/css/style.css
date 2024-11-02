@@ -20,13 +20,15 @@ div {
     height: 100px;
     background-color: #e8dfce; /* Example background color */
     padding: 20px;
+    justify-content: center; /* Center horizontally */
+    text-align: center;
 }
 
 .header-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px; /* Adds space between the logo and menu */
+    gap: 30px; /* Adds space between the logo and menu *
 }
 
 .page-content {
@@ -35,6 +37,8 @@ div {
     background-color: #f17d62; /* Example background color */
     margin-bottom: 0;
     padding-bottom: 0;
+    justify-content: center; /* Center horizontally */
+    text-align: center;
 }
 
 .site-footer {
@@ -42,6 +46,8 @@ div {
     background-color: #b3d68c; /* Light green */
     padding: 20px;
     color: #333333;
+    justify-content: center; /* Center horizontally */
+    text-align: center;
 }
 
 /* Main content area */
@@ -104,11 +110,13 @@ div {
     display: none;
 }
 .main-menu ul {
+    justify-content: center; /* Center horizontally */
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     gap: 20px;
+    text-align: center;
 }
 
 .main-menu li {
