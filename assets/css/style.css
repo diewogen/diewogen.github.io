@@ -8,6 +8,13 @@ div {
   margin-bottom: 2em;
 }
 
+.main-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
