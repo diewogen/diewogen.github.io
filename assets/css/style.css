@@ -18,6 +18,13 @@ body {
     padding: 20px;
 }
 
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px; /* Adds space between the logo and menu */
+}
+
 .page-content {
     flex-grow: 1; /* Take up remaining space */
     padding: 20px;
