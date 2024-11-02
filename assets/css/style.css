@@ -4,29 +4,33 @@ body {
     padding: 0;
 }
 
+/* Wrapper that fills the full viewport */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+}
+
+/* Specific heights for header, main, and footer */
+.site-header {
+    height: 15vh; /* 15% of viewport height */
+    background-color: #e8dfce; /* Example background color */
+    padding: 20px;
+}
+
 .page-content {
+    flex-grow: 1; /* Take up remaining space */
+    padding: 20px;
+    background-color: #f17d62; /* Example background color */
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
 .site-footer {
-    margin-top: 0;
-    padding-top: 20px; /* Adjust padding as desired */
-}
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 40vh;
-}
-
-.page-content {
-    flex-grow: 1;
-}
-
-/* Top navigation bar */
-.site-header {
-    background-color: #e8dfce; /* Light beige */
+    height: 15vh; /* 15% of viewport height */
+    background-color: #b3d68c; /* Light green */
+    padding: 20px;
+    color: #333333;
 }
 
 /* Main content area */
@@ -36,17 +40,15 @@ body {
     padding: 20px;
 }
 
-/* Footer */
-.site-footer {
-    background-color: #b3d68c; /* Light green */
-    color: #333333; /* Dark text */
-}
-
 .social-icons a {
     display: inline-block;
     margin-right: 10px;
     font-size: 1.5em;
     color: #333333;
+}
+
+.social-icons a:hover {
+    color: #f17d62; /* Coral color for hover effect */
 }
 
 .footer-section {
@@ -67,11 +69,6 @@ body {
 .footer-section p, .footer-section li {
     font-size: 0.9em;
     color: #333333;
-}
-
-
-.social-icons a:hover {
-    color: #f17d62; /* Coral color for hover effect */
 }
 
 .site-logo {
