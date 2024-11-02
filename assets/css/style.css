@@ -17,7 +17,7 @@ div {
 
 /* Specific heights for header, main, and footer */
 .site-header {
-    height: 10vh; /* 10% of viewport height */
+    height: 100px;
     background-color: #e8dfce; /* Example background color */
     padding: 20px;
 }
