@@ -92,4 +92,36 @@ body {
 .site-title {
     display: none;
 }
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
 
+.main-menu li {
+    display: inline;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #333333; /* Adjust to match your theme */
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.main-menu a:hover {
+    color: #ffffff;
+    background-color: #f17d62; /* Coral background on hover */
+    border-radius: 5px;
+}
+
+/* Make menu responsive */
+@media (max-width: 768px) {
+    .main-menu ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
