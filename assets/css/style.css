@@ -4,6 +4,10 @@ body {
     padding: 0;
 }
 
+div {
+  margin-bottom: 2em; /* adds 2 units of spacing after each div */
+}
+
 /* Wrapper that fills the full viewport */
 .wrapper {
     display: flex;
