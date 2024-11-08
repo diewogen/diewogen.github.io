@@ -94,19 +94,6 @@ div {
     vertical-align: middle;
 }
 
-@media (max-width: 768px) {
-    .site-logo {
-        height: 60px;
-    }
-}
-
-/* Mobile size */
-@media (max-width: 480px) {
-    .site-logo {
-        height: 40px;
-    }
-}
-
 .site-title {
     display: none;
 }
@@ -169,11 +156,4 @@ div {
     .main-menu ul.show {
         display: flex; /* Show menu when toggle is active */
     }
-}
-        
-body::after {
-    content: "";
-    display: block;
-    height: 100px; /* Adjust height if needed */
-    background-color: #b3d68c;
 }
