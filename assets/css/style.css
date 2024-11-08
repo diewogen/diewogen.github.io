@@ -148,6 +148,11 @@ div {
 
 /* Mobile styles for the menu */
 @media (max-width: 767px) {
+    .site-header {
+        min-height: 60px;
+        padding: 10px 20px;
+        position: relative;
+    }
     .main-menu ul {
         display: none; /* Hide menu by default on mobile */
         flex-direction: column;
