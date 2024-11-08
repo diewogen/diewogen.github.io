@@ -118,7 +118,6 @@ div {
     border-radius: 5px;
 }
 
-
 .main-menu ul {
     list-style: none;
     padding: 0;
@@ -127,18 +126,7 @@ div {
     gap: 20px;
 }
 
-/* Desktop styles for the menu */
-@media (min-width: 768px) {
-    .main-menu ul {
-        display: flex;
-    }
 
-    .menu-toggle {
-        display: none;
-    }
-}
-
-/* Hide the menu and show the hamburger icon on mobile */
 .menu-toggle {
     display: none;
     font-size: 1.5em;
@@ -148,7 +136,6 @@ div {
     color: #333333;
 }
 
-/* Adjust header height for mobile */
 @media (max-width: 767px) {
     .menu-toggle {
         display: inline-block; /* Show the burger icon */
