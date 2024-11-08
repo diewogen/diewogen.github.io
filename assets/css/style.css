@@ -146,23 +146,29 @@ div {
     }
 }
 
-/* Mobile styles for the menu */
+/* Adjust header height for mobile */
 @media (max-width: 767px) {
     .site-header {
-        min-height: 60px;
-        padding: 10px 20px;
-        position: relative;
+        min-height: 60px; /* Increase height if needed */
+        padding: 10px 20px; /* Add padding for spacing */
+        position: relative; /* Allows the menu to position relative to header */
     }
     .main-menu ul {
-        display: none; /* Hide menu by default on mobile */
+        display: none; /* Hidden by default on mobile */
         flex-direction: column;
         gap: 10px;
         position: absolute;
-        top: 60px; /* Adjust to position below header */
+        top: 100%; /* Positions menu right below the header */
         right: 10px;
-        background-color: #f17d62; /* Background color for mobile menu */
+        background-color: #f17d62; /* Background color for the mobile menu */
         padding: 10px;
         border-radius: 5px;
+        z-index: 10; /* Ensure it appears above other elements */
+    }
+
+    /* Show the menu when toggled */
+    .main-menu ul.show {
+        display: flex;
     }
 
     .menu-toggle {
@@ -171,5 +177,9 @@ div {
 
     .main-menu ul.show {
         display: flex; /* Show menu when toggle is active */
+    }
+    
+    .page-content {
+        margin-top: 60px; /* Adjust as necessary to avoid overlap */
     }
 }
