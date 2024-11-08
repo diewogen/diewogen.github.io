@@ -111,6 +111,15 @@ div {
     display: none;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333333;
+}
+
 .main-menu ul {
     justify-content: center;
     list-style: none;
@@ -139,9 +148,32 @@ div {
     border-radius: 5px;
 }
 
-@media (max-width: 768px) {
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333333;
+}
+
+@media (min-width: 768px) {
     .main-menu ul {
-        flex-direction: column;
-        gap: 10px;
+        display: flex;
     }
+
+    .menu-toggle {
+        display: inline-block; /* Show the hamburger icon */
+    }
+
+    .main-menu ul.show {
+        display: flex; /* Show menu when toggle is active */
+    }
+}
+        
+body::after {
+    content: "";
+    display: block;
+    height: 100px; /* Adjust height if needed */
+    background-color: #b3d68c;
 }
