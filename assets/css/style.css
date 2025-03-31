@@ -143,25 +143,26 @@ div {
         border: none;
         cursor: pointer;
         color: #333333;
+        position: relative;
+        z-index: 11;
     }
     .header-inner {
-        justify-content: flex-start;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative; /* für absolute Positionierung der Menübox */
+        z-index: 12;
     }
     .site-logo {
         margin-left: 10px; /* Add spacing if needed */
     }
     .main-menu ul {
-        display: none;
         flex-direction: column;
         gap: 10px;
         position: absolute;
-        top: 100%; /* Below the header */
+        top: 60px; /* oder z. B. 100% für direkt unter header-inner */
         left: 10px;
-        width: calc(100% - 20px); /* Full width with some padding */
-        background-color: #f17d62;
-        padding: 10px;
-        border-radius: 5px;
-        z-index: 10;
+        right: 10px;
     }
     .main-menu ul.show {
         display: flex;
