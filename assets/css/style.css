@@ -157,12 +157,16 @@ div {
         margin-left: 10px; /* Add spacing if needed */
     }
     .main-menu ul {
+        display: none;
         flex-direction: column;
         gap: 10px;
         position: absolute;
         top: 60px; /* oder z. B. 100% für direkt unter header-inner */
         left: 10px;
         right: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 10;
     }
     .main-menu ul.show {
         display: flex;
